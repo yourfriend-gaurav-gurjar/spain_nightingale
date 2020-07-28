@@ -18,5 +18,11 @@ library(tidyverse)
 
 ```{r}
 data <- openxlsx::read.xlsx("./datos_florence.xlsx")
-View(data)
+#View(data)
+```
+
+```{r}
+str(data)
+summary(data)
+
 ```
