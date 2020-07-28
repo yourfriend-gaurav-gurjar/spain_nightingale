@@ -1,0 +1,22 @@
+---
+title: "quick_data_analysis.Rmd"
+author: "Gaurav Gurjar"
+date: "7/28/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Loading the data into R
+```{r}
+library(openxlsx)
+library(tidyverse)
+```
+
+
+```{r}
+data <- openxlsx::read.xlsx("./datos_florence.xlsx")
+View(data)
+```
