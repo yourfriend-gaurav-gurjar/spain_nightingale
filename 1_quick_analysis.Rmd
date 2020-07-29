@@ -13,6 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r}
 library(openxlsx)
 library(tidyverse)
+
 ```
 
 
@@ -24,5 +25,9 @@ data <- openxlsx::read.xlsx("./datos_florence.xlsx")
 ```{r}
 str(data)
 summary(data)
+View(data)
+```
 
+```{r}
+names(data)[1] = "timestamp"
 ```
